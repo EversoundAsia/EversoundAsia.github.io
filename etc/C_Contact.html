@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html class="csstransforms csstransforms3d csstransitions no-js skrollr skrollr-desktop" lang="en">
+<head>
+    <title>永悦音乐</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- google font -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" />
+    <!-- font awesome-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <!-- Animation -->
+    <link rel="stylesheet" type="text/css" id="animationcss" href="css/animation.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- custom style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- custom scrollbar -->
+    <link rel="stylesheet" type="text/css" href="css/custom-scrollbar.css">
+    <!-- popup -->
+    <link rel="stylesheet" type="text/css" href="css/pretty-photo.css" />
+    <!-- color style -->
+    <link rel="stylesheet" type="text/css" href="css/colors/purple.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- purple-responsive -->
+    <link rel="stylesheet" type="text/css" href="css/colors/purple-responsive.css">
+    <!-- map -->
+    <style>
+        #map {
+            width: 560px;
+            height: 270px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- main page -->
+    <div class="main purple">
+        <!-- header-->
+        <header id="home" data-stellar-background-ratio="0.5" class="header animated no-background">
+            <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav" role="navigation">
+                <div class="container main-navigation">
+                    <div class="col-md-3 float-left"> <a class="logo-dark" href="#home"><img alt="logo" src="images/C_LOGO.png" class="logo-dark" /></a> <a class="logo-light" href="#home"><img alt="logo-white" src="images/WC_LOGO.png" class="logo-white" /></a> </div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                    </div>
+                    <div class="col-md-9 text-left float-right collapse-navation">
+                        <div class="navbar-collapse collapse navbar-inverse no-transition">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="C_Home.html">主页</a></li>
+                                <li><a href="C_About.html">关于我们</a></li>
+                                <li><a href="C_Talent.html">永悦人才</a></li>
+                                <li><a href="C_Team.html">团队</a></li>
+                                <li class="last"><a href="C_Contact.html">联络方式</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header end -->
+        <!-- contact -->
+        <section id="contact" class="contact gray-bg">
+            <div style=" height:60px;"></div>
+            <div class="container">
+                <div class="row border-bottom os-animation text-center" data-os-animation="fadeInUp">
+                    <div class="col-md-6 col-sm-6 title-text border-right">
+                        <h2 class="title">联络方式</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-6 simple-text">
+                        <p class="description text-left">如果有任何的反馈、评论或问题请随时联系我们。</p>
+                    </div>
+                </div>
+                <div class="row contact-info os-animation" data-os-animation="fadeInUp">
+                    <div class="col-md-6 col-sm-6 left-part">
+
+                        <div class="head">
+                            <span class="contact-title">地址</span>
+                            <p class="content contact-text address">
+                                永悦音乐位于<br>
+                                6 Battery Road Level 30 Singapore 049909
+                            </p>
+                        </div>
+                        <ul class="icon-list">
+                            <li><i class="fa fa-phone"></i>+65-6322 0880</li>
+                            <li class="divider"></li>
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:enquiry@hazelberg.com">enquiry@hazelberg.com</a></li>
+                            <li class="divider"></li>
+                            <li><i class="fa fa-globe"></i><a href="javascript:;">http://www.eversoundasia.wordpress.com</a></li>
+                            <li class="divider"></li>
+                            <li><i class="fa fa-globe"></i><a href="http://http://www.eversound.com/">http://www.eversound.com/</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 right-part">
+                        <div class="form-group">
+                            <div id="map"></div>
+                            <script>
+
+                                function initMap() {
+                                    var myLatLng = { lat: 1.2856, lng: 103.8520 };
+
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 16,
+                                        center: myLatLng
+                                    });
+
+                                    var marker = new google.maps.Marker({
+                                        position: myLatLng,
+                                        map: map,
+                                        title: '6 Battery Road Level 30 Singapore 049909'
+                                    });
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact end -->
+        <!-- scroll to top -->
+        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+        <!-- scroll to top End... -->
+        <!-- footer -->
+        <!-- footer -->
+        <footer>
+            <div class="color-overlay">
+                <div class="container">
+                    <div class="row os-animation" data-os-animation="bounceIn">
+                        <ul class="social footer-social text-center">
+                            <div id="cp_widget_dfc456fd-ae06-4508-b53b-556112e8657f">...</div>
+<script type="text/javascript">
+    var cpo = []; cpo["_object"] = "cp_widget_dfc456fd-ae06-4508-b53b-556112e8657f"; cpo["_fid"] = "A0EAfst9oSdF";
+    var _cpmp = _cpmp || []; _cpmp.push(cpo);
+    (function () {
+        var cp = document.createElement("script"); cp.type = "text/javascript";
+        cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+        var c = document.getElementsByTagName("script")[0];
+        c.parentNode.insertBefore(cp, c);
+    })(); </script>
+<noscript>Powered by Cincopa <a href='https://www.cincopa.com/media-platform/skins/responsive-video-player-without-playlist'>Video Player</a> for Business solution.<span>New Gallery 2016/10/7</span></noscript>
+
+                        </ul>
+                    </div>
+                    <div class="row os-animation" data-os-animation="bounceIn">
+                        <div class="transparent-line"></div>
+                    </div>
+                    <div class="row os-animation" data-os-animation="bounceIn">
+                        <p class="text-center content-white copy">&copy; 2016 永悦音乐</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end --> 
+
+        <!-- footer end --> 
+    </div>
+    <!-- main page end -->
+    <!-- javascript  -->
+    <!-- Placed at the End of the document so the pages load faster -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- page loading -->
+    <!-- smoth hover -->
+    <script src="js/hover.min.js"></script>
+    <!-- parallax background -->
+    <script src="js/parallel.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- modernizr -->
+    <script src="js/modernizr.custom.js"></script>
+    <!-- smooth page scrolling -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- custom javascript  -->
+    <script src="js/custom.js"></script>
+    <!-- counter  -->
+    <script src="js/conter.js"></script>
+    <!-- bootstrap  -->
+    <script src="js/bootstrap-custom.js"></script>
+    <!-- portfolio  -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <!-- custom scrollbar  -->
+    <script src="js/custom-scrollbar.min.js"></script>
+    <!-- google map API -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script src="js/map.js"></script>
+    <!-- gallery  -->
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("[rel^='lightbox']").prettyPhoto({
+                deeplinking: false,
+                social_tools: ''
+            });
+        });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdbDUwTHLvaSb7UuwYDlaq2F9GqWD1jCg&callback=initMap"
+            async defer></script>
+</body>
+</html>
